@@ -25,11 +25,12 @@ void MatrixArithmeticMean(int[,] matrix)
     for (int j = 0; j < matrix.GetLength(1); j++)
     {
         double summa = 0;
+        int count = 1;
         for (int i = 0; i < matrix.GetLength(0); i++)
         {        
             summa += matrix[i, j];
         }
-        Console.WriteLine($"Среднее арифметическое столбца равно: {summa / matrix.GetLength(0)}");
+        Console.WriteLine($"Среднее арифметическое столбца {count + j} равно: {summa / matrix.GetLength(0)}");
     }  
 }
 
